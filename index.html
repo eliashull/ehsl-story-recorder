@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Additional site meta -->
+		<meta name="keywords" content="happy holidays">
+        <meta name="description" content="Happy Holidays from the Spencer S. Eccles Health Sciences Library">
+        <meta name="author" content="Bryan Elias Hull">
+		<!-- Bootstrap CSS -->
+		    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+		<!-- Google Fonts -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+		<!-- Font Awesome Icons -->
+			<script src="https://kit.fontawesome.com/f450468980.js" crossorigin="anonymous"></script>
+		<!-- Main Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+		<title>Share your Eccles Health Sciences Library Story</title>
+	</head>
+	<body>
+	
+	<nav class="navbar">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="img/ehsl-logo.png" alt="Spencer S. ECcles Health Sciences Library" width="150">
+			</a>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<!--<img class="library-image" src="img/spencer-s-eccles-health-sciences-library-exterior.jpg">-->
+			<h1>Share your Eccles Health Sciences Library Story</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec rhoncus elit. Aenean suscipit non sem sed venenatis. Pellentesque volutpat libero nec semper aliquet. Nulla ullamcorper vehicula est sit amet tempor. Nam sit amet massa sed massa placerat finibus.</p> 
+		</div>
+	<hr />	
+		<div class="row">
+			<h2>1. Make a recording</h2>
+			<div class="d-flex">
+				<button id="recordButton" class="btn recording-control start-recording"><i class="fa-solid fa-microphone"></i> Start Recording</button>
+				<button id="pauseButton" class="btn recording-control pause-recording"><i class="fa-solid fa-pause"></i> Pause Recording</button>
+				<button id="stopButton" class="btn recording-control stop-recording"><i class="fa-solid fa-stop"></i> Stop Recording</button>
+			</div>
+		</div>
+	<hr />	
+		<div class="row">
+			<div id="formats"></div>
+				<h2>2. Review recording</h2>
+				<ol id="recordingsList"></ol>	
+		</div>
+	<hr />
+		<div class="row">
+			<div class="col-md-6">
+			<h2>3. Submit your recording</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec rhoncus elit. Aenean suscipit non sem sed venenatis. Pellentesque volutpat libero nec semper aliquet. Nulla ullamcorper vehicula est sit amet tempor. Nam sit amet massa sed massa placerat finibus.</p> 
+			</div>
+			<div class="col-md-6">
+			<form>
+				<div class="mb-3">
+					<label for="InputName" class="form-label">Full Name</label>
+					<input type="email" class="form-control" id="InputName" aria-describedby="emailHelp">
+				<!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+				</div>
+				<div class="mb-3">
+					<label for="InputEmail" class="form-label">Email Address</label>
+					<input type="#" class="form-control" id="InputEmail">
+				</div>
+				<div class="mb-3">
+					<label for="InputAffiliation" class="form-label">University of Utah Affiliation</label>
+					<input type="#" class="form-control" id="InputAffiliation">
+				</div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">By selecting this box, you agree to allow the Spencer S. Eccles Health Sciences Libary to collect your audio recording for use in historical collections and promotional activities. Your name and email are optional to share, and will only be used to contact you by members of the Eccles Library staff and faculty about your story.</label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit Recording <i class="fa-solid fa-arrow-right"></i></button>
+			</form>
+			</div>
+		</div>
+	</div>
+	<!--
+	<div class="row footer-row position-absolute-bottom" id="footer">
+		<p class="footer-social-media"><a href="https://twitter.com/EHSLibrary" target="_blank" class="social-link"><i class="fab fa-twitter-square"></i></a> <a href="https://www.instagram.com/ehslibrary/" target="_blank" class="social-link"><i class="fab fa-instagram-square"></i></a> <a href="https://www.facebook.com/EcclesLibrary" target="_blank" class="social-link"><i class="fab fa-facebook-square"></i></a> <a href="https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw" target="_blank" class="social-link"><i class="fab fa-youtube-square"></i></a></p>
+		<p class="footer-text">© 1993-2021 Spencer S. Eccles Health Sciences Library<br> The University of Utah<br> 10 N. 1900 E. Salt Lake City, UT 84112<br> Phone 801.581.5534</p>
+	</div>
+	-->
+	
+	<!--<div class="container-fluid d-xs-none d-md-block">
+		
+		<div class="row parallax1">
+			<div class="card-introduction">
+				<h1>HAPPY HOLIDAYS</h1>
+				<p><img src="img/holly-animation-left.png" class="holly-img-left" />from the<img src="img/holly-animation-right.png" class="holly-img-right" /></p>
+				<h4>Spencer S. Eccles <br />Health Sciences Library</h4>
+				<a href="#bright-future"><i class="fa-solid fa-angle-down"></i></a>
+			</div>
+		</div>
+		
+		<div class="row parallax2" id="bright-future">
+			<div class="card-content">
+				<h2><img src="img/holly-animation-left.png" class="holly-img-left" />Bright Future<img src="img/holly-animation-right.png" class="holly-img-right" /></h2>
+				<p>We are making progress toward our vision to transform rural health care by providing access to information professionals and evidence based information to all health care providers in Utah.</p>
+				<p><a href="#ehsl-2022"><i class="fa-solid fa-angle-down"></i></a></p>
+			</div>
+		</div>
+		
+		<div class="row parallax3" id="ehsl-2022">
+			<div class="quote-container">
+				<p class="quote">"No state or region can become truly great without a world-class medical center at it's nucleus."</p>
+				<p class="quote-signature"><img src="img/holly-animation-left.png" class="holly-img-left d-none-xs" />-Spencer Fox Eccles</p>
+				<a href="#inspiration"><i class="fa-solid fa-angle-down parallax-arrow-button"></i></a>
+			</div>
+		</div>
+		
+		<div class="row parallax4" id="inspiration">
+			<div class="card-content">
+				<h2><img src="img/holly-animation-left.png" class="holly-img-left" />Explore<img src="img/holly-animation-right.png" class="holly-img-right" /></h2>
+				<p>We invite you to explore library collections and services through our 50th Anniversary Video Series</p>
+				<a href="https://library.med.utah.edu/publishing/exhibition/spencer-s-eccles-health-sciences-library-50th-anniversary-video-series/" class="donate-link" target="_blank"><button type="button" class="btn btn-fx">Explore EHSL</button></a>
+				<a href="#explore"><i class="fa-solid fa-angle-down"></i></a>
+			</div>		
+		</div>
+		
+		<div class="row parallax5" id="explore">
+			<div class="card-content">
+				<h2><img src="img/holly-animation-left.png" class="holly-img-left" />Inspiration<img src="img/holly-animation-right.png" class="holly-img-right" /></h2>
+				<p>If you are inspired by our vision for the future, know that you can have a partnership with us.</p>
+				<a href="http://bit.ly/3i9BHSc" class="donate-link" target="_blank"><button type="button" class="btn btn-fx">Donate to EHSL</button></a>
+				<a href="#catherines-message"><i class="fa-solid fa-angle-down"></i></a>
+			</div>		
+		</div>
+			
+		<div class="row parallax6" id="catherines-message">
+			<div class="quote-container">
+				<img src="img/catherine-soehner.jpg" class="rounded-circle" alt="Catherine Soehner, MLS, AHIP">
+				<p class="catherine-signature-thank-you">Thank you for all your support of the Eccles Health Sciences Library.</p>
+				<p class="catherine-signature">Warmly,</p>
+				<p class="catherine-signature">Catherine Soehner, MLS, AHIP</p>
+				<p class="catherine-signature-sans-serif">Associate Dean and Director, Spencer S. Eccles Health Sciences Library</p>
+				<a href="#"><i class="fa-solid fa-angle-up"></i></a>
+			</div>		
+		</div>
+		
+		<div class="row parallax7"></div>
+		
+		<div class="row footer-row" id="footer">
+			<p class="footer-social-media"><a href="https://twitter.com/EHSLibrary" target="_blank" class="social-link"><i class="fab fa-twitter-square"></i></a> <a href="https://www.instagram.com/ehslibrary/" target="_blank" class="social-link"><i class="fab fa-instagram-square"></i></a> <a href="https://www.facebook.com/EcclesLibrary" target="_blank" class="social-link"><i class="fab fa-facebook-square"></i></a> <a href="https://www.youtube.com/channel/UCDYTPnuWBAVsOVGJ0LTmTgw" target="_blank" class="social-link"><i class="fab fa-youtube-square"></i></a></p>
+			<p class="footer-text">© 1993-2021 Spencer S. Eccles Health Sciences Library<br> The University of Utah<br> 10 N. 1900 E. Salt Lake City, UT 84112<br> Phone 801.581.5534</p>
+		</div>
+	</div><!-- Container Close -->	
+
+    <!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+  	<script src="js/app.js"></script>
+
+
+    <!-- Optional JavaScript; jQuery, Popper, Bootstrap-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+	</body>
+</html>

@@ -1,0 +1,373 @@
+/* 
+Eccles Health Sciences Libary Online Holiday Card 2022
+Created November 2022
+Author: Bryan Elias Hull
+Github: https://github.com/eliashull
+Resources Utilized
+-- Bootstrap 
+-- Google Fonts
+-- Font Awesome
+*/
+
+/***** BASICS *****/
+			
+html {
+	background: #ffffff;
+	scroll-behavior: smooth;
+}
+
+body {	
+	/*font-size: calc(12px + (24 - 16) * ((100vw - 768px) / (1600 - 768))); 
+	@media screen and (max-width: 768px) { body { font-size: 12px; } }@media screen and (min-width: 1600px) { body { font-size: 26px; } };*/
+	font-size: 14px;
+    /*background-image: url("img/spencer-s-eccles-health-sciences-library-exterior.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  */
+}
+
+/***** TEXT *****/
+			
+body, input, select, textarea {
+	color: #da212d;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	color: #ac162c;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2em;
+	/*margin: 10px 5px 20px 5px;*/
+}
+
+h2, h3 {
+	color: #111111;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-size: 1.5em;
+}
+
+h4 {
+	color: #ac162c;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.75em;
+}
+
+h5 {
+	color: #ac162c;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;	
+	font-size: 2rem;
+}
+
+p{
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+	color: #111111;
+	/*margin: 10px 10px 20px 10px;*/
+}
+
+a {
+	color: #ac162c;
+	transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+	color: #ff949b;
+	transition: color 0.25s ease-in-out;
+}
+
+strong {
+    font-weight: 800;
+}
+
+hr {
+	color: #666666;
+	margin: 30px 0px 30px 0px;
+}
+
+/***** FORM STYLES *****/
+
+.form-label {
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+	font-weight: 800;
+}
+
+/***** ROW STYLES *****/
+
+.row {
+	margin: 25px 0px 25px 0px;
+	padding-right: 10px !important; /* fix for that annoying thing bootstrap does */
+}
+
+/***** FOOTER STYLES *****/
+
+.footer-row {
+	background-color: #111111;
+	display: flex;
+	flex-direction: column;
+}
+
+p.footer-text {
+	font-family: "Open Sans", sans-serif;
+	font-size: .75rem;
+	text-align: center;
+	line-height: 1;
+	color: #eeeeee;
+	margin: 20px 10px 10px 10px;
+}
+
+p.footer-social-media {
+	font-family: "Open Sans", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1;
+	color: #eeeeee;
+	margin: 20px 10px 10px 10px;
+}
+
+/***** NAVBAR STYLES *****/
+
+.navbar {
+	background-color: #ac162c;
+}
+
+/***** RCORDER BUTTON STYLES *****/
+
+.recording-control {
+	margin: 0px 5px 0px 5px;
+	padding: 20px;
+	font-size: 1.25rem;
+}
+
+.start-recording {
+	background-color: #0e5220;
+	color: #ffffff;
+}
+
+.start-recording:hover {
+	color: #0e5220;
+	border: 2px solid #0e5220;
+	background-color: #bef7ce;
+}
+
+.start-recording:active {
+	background-color: #56b36e;
+	color: #ffffff;
+}
+
+.pause-recording {
+	color: #debd1b;
+	border: 2px solid #debd1b;
+}
+
+.pause-recording:hover {
+	background-color: #debd1b;
+	color: #ffffff;
+}
+
+.pause-recording:active {
+	color: #debd1b;
+	border: 2px solid #debd1b;
+}
+
+.stop-recording {
+	color: #ac162c;
+	border: 2px solid #ac162c;
+}
+
+.stop-recording:hover {
+	background-color: #ac162c;
+	color: #ffffff;
+}
+
+.stop-recording:active {
+	background-color: #0e5220;
+	color: #ffffff;
+}
+
+/***** LIBRARY IMAGE *****/
+
+.library-image {
+	display: inline;
+	float: left;
+	margin: 0 15px 0 0;
+	width: 50%;
+}
+
+
+/***** SPECIFIC ELEMENTS *****/
+/***
+.card-introduction {
+	text-align: center;
+	position: relative;
+	margin: auto;
+	padding: 40px;
+	border: solid #da212d 12px;
+	background-color: #571616;
+	opacity: .9;
+	max-width: 30em;
+}
+
+.card-content {
+	text-align: center;
+	position: relative;
+	padding: 40px;
+	border: solid #da212d 12px;
+	background-color: #571616;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 30em;
+	opacity: .9;
+}
+
+.quote-container {
+	text-align: center;
+	position: relative;
+	padding: 20px;
+	border: solid #571616 12px;
+	background-color: #eeeeee;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 30em;
+	opacity: .9;
+}
+
+p.quote {
+	font-family: 'Yellowtail', cursive;
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.25;
+	color: #da212d;
+}
+
+p.quote-signature {
+	font-family: "Raleway", sans-serif;
+	font-size: 1em;
+	text-align: center;
+	line-height: 1;
+	color: #da212d;
+}
+
+p.catherine-signature {
+	font-family: 'Yellowtail', cursive;
+	font-size: 1.75rem;
+	text-align: center;
+	line-height: 1.25;
+	color: #da212d;
+	margin: 0px 10px 0px 10px;
+}
+
+p.catherine-signature-sans-serif {
+	font-family: "Raleway", sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1;
+	color: #da212d;
+	margin: 0px 10px 20px 10px;
+}
+
+p.catherine-signature-thank-you {
+	font-family: "Raleway", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1;
+	color: #da212d;
+	margin: 20px 10px 20px 10px;
+}
+
+img.rounded-circle {
+	max-width: 20%;
+	max-height: 20%;
+	border-radius: 50% !important;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.row {padding-right: 10px !important;} /* fix for that annoying thing bootstrap does */
+/***
+.footer-row {
+	background-color: #571616;
+	display: flex;
+	flex-direction: column;
+}
+
+p.footer-text {
+	font-family: "Raleway", sans-serif;
+	font-size: .75rem;
+	text-align: center;
+	line-height: 1;
+	color: #eeeeee;
+	margin: 20px 10px 10px 10px;
+}
+
+p.footer-social-media {
+	font-family: "Raleway", sans-serif;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 1;
+	color: #eeeeee;
+	margin: 20px 10px 10px 10px;
+}
+
+img.holly-img-left {
+	max-width: 3rem;
+	margin-right: 20px;
+}
+
+img.holly-img-right {
+	max-width: 3rem;
+	margin-left: 20px;
+}
+
+/***** ICONS AND BUTTONS *****/
+/***
+.fa-angle-down {
+	font-size: 6rem;
+}
+
+.fa-angle-up {
+	font-size: 6rem;
+}
+
+button{
+	display: block;
+	/*margin: 0% 50% 0% 50%;*/
+}
+/**
+.btn{
+position: relative;
+font-weight: 700;
+color: #da212d;
+letter-spacing: 2px;
+text-decoration: none;
+margin: 10px;
+border: 3px solid #da212d;
+padding: 15px 50px;
+text-transform: uppercase;
+overflow: hidden;
+transition: all 0.25s ease-in-out;
+z-index: 0;
+}
+
+.btn:hover{
+background-color: #ac162c;
+color: #eeeeee;
+transition: all 0.25s ease-in-out;
+}
+
+.donate-link{
+border-bottom-style: none;
+}
+
+.donate-link:hover{
+border-bottom-style: none;
+}
